@@ -20,10 +20,12 @@ namespace Sparky
             Assert.IsFalse(result);
         }
 		[Test]
-		public void IsOddNums_InputOdd_GetTrue()
+		[TestCase(11)]
+		[TestCase(13)]
+		public void IsOddNums_InputOdd_GetTrue(int a)
         {
 			Calculator calc = new();
-            bool result = calc.isOddNum(3);
+            bool result = calc.isOddNum(a);
             Assert.IsTrue(result);
         }
 	}
