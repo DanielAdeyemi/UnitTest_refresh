@@ -23,6 +23,14 @@ namespace SparkyNUnitTest
                 calc.Score = 95;
                 Assert.AreEqual("A", calc.GetGrade());
             }
+
+            [Test]
+            public void GradingCalculator_Score85AndAttendance90_GradeB()
+            {
+                calc.Score = 85;
+                calc.AttendancePercentage = 90;
+                Assert.AreEqual("B", calc.GetGrade());
+            }
         }
     }
 }
