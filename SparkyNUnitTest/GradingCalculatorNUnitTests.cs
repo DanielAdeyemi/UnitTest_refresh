@@ -31,6 +31,14 @@ namespace SparkyNUnitTest
                 calc.AttendancePercentage = 90;
                 Assert.AreEqual("B", calc.GetGrade());
             }
+
+            [Test]
+            public void GradingCalculator_Score65AndAttendance90_GradeC()
+            {
+                calc.Score = 65;
+                calc.AttendancePercentage = 90;
+                Assert.AreEqual("C", calc.GetGrade());
+            }
         }
     }
 }
