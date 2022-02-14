@@ -23,7 +23,7 @@ namespace Sparky
 		public void IsOddNums_InputOdd_GetTrue()
         {
 			Calculator calc = new();
-			bool result = false;
+			bool result = calc.isOddNum(3);
 			Assert.AreEqual(true, result);
         }
 	}
