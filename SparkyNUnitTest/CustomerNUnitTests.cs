@@ -24,6 +24,13 @@ namespace SparkyNUnitTest
             Assert.That(customer.GreetMessage, Does.EndWith("Spark"));
             Assert.That(customer.GreetMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]"));
         }
+
+        [Test]
+        public void DiscountCheck_DefaultCustomer_ReturnsDiscountInRange()
+        {
+            int result = customer.Discount;
+            Assert.That(result, Is.InRange(1, 5));
+        }
     }
 }
 
