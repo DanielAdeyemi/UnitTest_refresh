@@ -28,6 +28,16 @@ namespace Sparky
             bool result = calc.isOddNum(a);
             Assert.IsTrue(result);
         }
+
+		[Test]
+		[TestCase(10, ExpectedResult = false)]
+		[TestCase(11, ExpectedResult = true)]
+
+		public bool IsOddNums_InputNum_GetBoolResult(int a)
+        {
+			Calculator calc = new();
+			return calc.isOddNum(a);
+        }
 	}
 }
 
