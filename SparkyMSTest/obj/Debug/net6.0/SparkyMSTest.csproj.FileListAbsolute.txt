@@ -1,0 +1,5 @@
+/Users/daniel/Projects/Sparky/SparkyMSTest/obj/Debug/net6.0/SparkyMSTest.csproj.AssemblyReference.cache
+/Users/daniel/Projects/Sparky/SparkyMSTest/obj/Debug/net6.0/SparkyMSTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daniel/Projects/Sparky/SparkyMSTest/obj/Debug/net6.0/SparkyMSTest.AssemblyInfoInputs.cache
+/Users/daniel/Projects/Sparky/SparkyMSTest/obj/Debug/net6.0/SparkyMSTest.AssemblyInfo.cs
+/Users/daniel/Projects/Sparky/SparkyMSTest/obj/Debug/net6.0/SparkyMSTest.csproj.CoreCompileInputs.cache
