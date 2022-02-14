@@ -25,10 +25,12 @@ namespace SparkyNUnitTest
             }
 
             [Test]
-            public void GradingCalculator_Score85AndAttendance90_GradeB()
+            [TestCase(85, 90)]
+            [TestCase(95,65)]
+            public void GradingCalculator_Score85Or95AndAttendance90Or65_GradeB(int a, int b)
             {
-                calc.Score = 85;
-                calc.AttendancePercentage = 90;
+                calc.Score = a;
+                calc.AttendancePercentage = b;
                 Assert.AreEqual("B", calc.GetGrade());
             }
 
@@ -39,6 +41,7 @@ namespace SparkyNUnitTest
                 calc.AttendancePercentage = 90;
                 Assert.AreEqual("C", calc.GetGrade());
             }
+            
         }
     }
 }
