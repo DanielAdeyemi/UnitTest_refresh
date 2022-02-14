@@ -46,7 +46,7 @@ namespace Sparky
         {
 			Calculator calc = new();
 			double result = calc.AddDoubles(a, b);
-			Assert.AreEqual(15.9, result);
+			Assert.AreEqual(15.9, result, 1);
         }
 	}
 }
