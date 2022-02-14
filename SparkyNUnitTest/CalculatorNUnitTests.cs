@@ -10,7 +10,7 @@ namespace Sparky
 		{
 			Calculator calc = new();
 			int result = calc.AddNums(10, 20);
-			Assert.AreEqual(10, result);
+			Assert.AreEqual(30, result);
 		}
 	}
 }
