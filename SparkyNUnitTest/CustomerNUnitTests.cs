@@ -29,7 +29,7 @@ namespace SparkyNUnitTest
         public void DiscountCheck_DefaultCustomer_ReturnsDiscountInRange()
         {
             int result = customer.Discount;
-            Assert.That(result, Is.InRange(1, 5));
+            Assert.That(result, Is.InRange(10, 25));
         }
     }
 }
