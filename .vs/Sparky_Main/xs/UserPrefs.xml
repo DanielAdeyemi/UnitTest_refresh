@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{94325E5A-9A57-4B0D-8DFA-19240C850980}|Default">
+﻿<Properties StartupConfiguration="{C5700363-C87E-408A-9CE7-D33EDC330E43}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SparkyMSTest/CalculatorMSTests.cs">
     <Files>
       <File FileName="Sparky/Calculator.cs" Line="1" Column="1" />
@@ -23,11 +23,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.SparkyMSTest PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SparkyNUnitTest PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
 </Properties>

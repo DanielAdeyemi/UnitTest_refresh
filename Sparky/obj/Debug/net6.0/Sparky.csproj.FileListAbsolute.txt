@@ -2,7 +2,6 @@
 /Users/daniel/Projects/Sparky/Sparky/bin/Debug/net6.0/Sparky.dll
 /Users/daniel/Projects/Sparky/Sparky/bin/Debug/net6.0/ref/Sparky.dll
 /Users/daniel/Projects/Sparky/Sparky/bin/Debug/net6.0/Sparky.pdb
-/Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.csproj.AssemblyReference.cache
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.GeneratedMSBuildEditorConfig.editorconfig
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.AssemblyInfoInputs.cache
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.AssemblyInfo.cs
@@ -10,3 +9,4 @@
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.dll
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/ref/Sparky.dll
 /Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.pdb
+/Users/daniel/Projects/Sparky/Sparky/obj/Debug/net6.0/Sparky.csproj.AssemblyReference.cache
