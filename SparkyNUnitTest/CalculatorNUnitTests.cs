@@ -16,9 +16,10 @@ namespace Sparky
 		public void IsOddNums_InputEven_GetFalse()
         {
 			Calculator calc = new();
-			bool result = true;
+			bool result = calc.isOddNum(2);
             Assert.AreEqual(false, result);
         }
+
 	}
 }
 
