@@ -17,14 +17,14 @@ namespace Sparky
         {
 			Calculator calc = new();
 			bool result = calc.isOddNum(2);
-            Assert.AreEqual(false, result);
+            Assert.IsFalse(result);
         }
 		[Test]
 		public void IsOddNums_InputOdd_GetTrue()
         {
 			Calculator calc = new();
-			bool result = calc.isOddNum(3);
-			Assert.AreEqual(true, result);
+            bool result = calc.isOddNum(3);
+            Assert.IsTrue(result);
         }
 	}
 }
