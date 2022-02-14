@@ -9,6 +9,6 @@ namespace Sparky
 			GreetMessage = $"Hello, {firstName} {lastName}";
             return GreetMessage;
 		}
-	}
+    }
 }
 
