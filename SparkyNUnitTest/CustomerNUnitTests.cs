@@ -60,6 +60,14 @@ namespace SparkyNUnitTest
                     Throws.ArgumentException);
             });
         }
+
+        [Test]
+        public void CustomerType_CreateCustomerWithLessThanHundredOrder_ReturnBasicCustomer()
+        {
+            customer.OrderTotal = 10;
+            var result = customer.GetCustomerDetails();
+            Assert.That(result, Is.TypeOf<BasicCustomer>());
+        }
     }
 }
 
