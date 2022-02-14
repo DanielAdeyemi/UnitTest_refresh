@@ -12,6 +12,13 @@ namespace Sparky
 			int result = calc.AddNums(10, 20);
 			Assert.AreEqual(30, result);
 		}
+		[Test]
+		public void IsOddNums_InputEven_GetFalse()
+        {
+			Calculator calc = new();
+			bool result = true;
+            Assert.AreEqual(false, result);
+        }
 	}
 }
 
