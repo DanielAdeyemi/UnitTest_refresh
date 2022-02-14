@@ -38,6 +38,16 @@ namespace Sparky
 			Calculator calc = new();
 			return calc.isOddNum(a);
         }
+		[Test]
+		[TestCase(5.4, 10.5)]
+		[TestCase(5.43, 10.53)]
+		[TestCase(5.49, 10.59)]
+		public void AddNumsDouble_InputTwoDoubles_GetCorrectAddition(double a, double b)
+        {
+			Calculator calc = new();
+			double result = calc.AddDoubles(a, b);
+			Assert.AreEqual(15.9, result);
+        }
 	}
 }
 
