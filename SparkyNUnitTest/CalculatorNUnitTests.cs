@@ -61,6 +61,8 @@ namespace Sparky
 			List<int> expectedOddRange = new() { 5, 7, 9 };
             List<int> result = calc.GetOddRange(5, 10);
             Assert.That(result, Is.EquivalentTo(expectedOddRange));
+			Assert.That(result, Is.Not.Empty);
+			Assert.That(result, Has.No.Member(6));
         }
     }
 }
