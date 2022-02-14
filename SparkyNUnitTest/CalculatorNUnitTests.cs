@@ -19,7 +19,13 @@ namespace Sparky
 			bool result = calc.isOddNum(2);
             Assert.AreEqual(false, result);
         }
-
+		[Test]
+		public void IsOddNums_InputOdd_GetTrue()
+        {
+			Calculator calc = new();
+			bool result = false;
+			Assert.AreEqual(true, result);
+        }
 	}
 }
 
