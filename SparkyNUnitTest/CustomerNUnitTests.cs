@@ -68,6 +68,14 @@ namespace SparkyNUnitTest
             var result = customer.GetCustomerDetails();
             Assert.That(result, Is.TypeOf<BasicCustomer>());
         }
+
+        [Test]
+        public void CustomerType_CreateCustomerWithMoreThanHundredOrder_ReturnPlatinumCustomer()
+        {
+            customer.OrderTotal = 102;
+            var result = customer.GetCustomerDetails();
+            Assert.That(result, Is.TypeOf<PlatinumCustomer>());
+        }
     }
 }
 
