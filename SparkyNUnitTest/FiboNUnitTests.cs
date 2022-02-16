@@ -23,8 +23,9 @@ namespace SparkyNUnitTest
                 fibo.Range = 1;
                 List<int> result = fibo.GetFiboSeries();
                 List<int> expected = new() { 0 };
-                Assert.IsNotNull(result);
+                Assert.That(result, Is.Not.Empty);
                 Assert.That(result, Is.Ordered);
+                Assert.That(result, Is.EquivalentTo(expected)); //EquivalentTo compare collections!!!
                 CollectionAssert.AreEqual(expected, result);
             });
         }
@@ -39,7 +40,9 @@ namespace SparkyNUnitTest
                 List<int> result = fibo.GetFiboSeries();
                 Assert.That(result, Does.Contain(3));
                 Assert.That(result, Does.Not.Contain(4));
+                Assert.That(result, Has.No.Member(4));
                 Assert.That(result, Has.Count.EqualTo(6));
+                Assert.That(result.Count, Is.EqualTo(6));
                 CollectionAssert.AreEqual(expected, result);
             });
         }
