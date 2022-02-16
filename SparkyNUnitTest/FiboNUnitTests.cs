@@ -21,10 +21,11 @@ namespace SparkyNUnitTest
             Assert.Multiple(() =>
             {
                 fibo.Range = 1;
-                List<int> result = new List<int>{ 0 };
-                Assert.IsNotNull(fibo.GetFiboSeries);
-                Assert.That(fibo.GetFiboSeries, Is.Ordered);
-                CollectionAssert.AreEqual(result, fibo.GetFiboSeries());
+                List<int> result = fibo.GetFiboSeries();
+                List<int> expected = new() { 0 };
+                Assert.IsNotNull(result);
+                Assert.That(result, Is.Ordered);
+                CollectionAssert.AreEqual(expected, result);
             });
         }
 
@@ -34,11 +35,12 @@ namespace SparkyNUnitTest
             Assert.Multiple(() =>
             {
                 fibo.Range = 6;
-                List<int> result = new List<int> { 0, 1, 1, 2, 3, 5 };
-                Assert.That(fibo.GetFiboSeries, Does.Contain(3));
-                Assert.That(fibo.GetFiboSeries, Does.Not.Contain(4));
-                Assert.That(fibo.GetFiboSeries, Has.Count.EqualTo(6));
-                CollectionAssert.AreEqual(result, fibo.GetFiboSeries());
+                List<int> expected = new () { 0, 1, 1, 2, 3, 5 };
+                List<int> result = fibo.GetFiboSeries();
+                Assert.That(result, Does.Contain(3));
+                Assert.That(result, Does.Not.Contain(4));
+                Assert.That(result, Has.Count.EqualTo(6));
+                CollectionAssert.AreEqual(expected, result);
             });
         }
     }
