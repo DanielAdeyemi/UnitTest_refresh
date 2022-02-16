@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 using Sparky;
 
@@ -15,11 +16,17 @@ namespace SparkyNUnitTest
         }
 
         [Test]
-		public void IsListEmpty_InputRange_ReturnNonEmpty()
+        public void IsListEmpty_InputRange_ReturnNonEmpty()
         {
-            fibo.Range = 1;
-            Assert.IsNotNull(fibo.GetFiboSeries);
-        }
+            Assert.Multiple(() =>
+            {
+                fibo.Range = 1;
+                List<int> result = new List<int>{ 0 };
+                Assert.IsNotNull(fibo.GetFiboSeries);
+                Assert.That(fibo.GetFiboSeries, Is.Ordered);
+                CollectionAssert.AreEqual(result, fibo.GetFiboSeries());
+            });
+            }
 
     }
 }
