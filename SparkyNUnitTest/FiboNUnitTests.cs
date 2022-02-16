@@ -18,7 +18,7 @@ namespace SparkyNUnitTest
 		public void IsListEmpty_InputRange_ReturnNonEmpty()
         {
             fibo.Range = 1;
-            Assert.IsNull(fibo.GetFiboSeries);
+            Assert.IsNotNull(fibo.GetFiboSeries);
         }
 
     }
