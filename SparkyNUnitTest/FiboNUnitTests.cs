@@ -26,7 +26,20 @@ namespace SparkyNUnitTest
                 Assert.That(fibo.GetFiboSeries, Is.Ordered);
                 CollectionAssert.AreEqual(result, fibo.GetFiboSeries());
             });
-            }
+        }
 
+        [Test]
+        public void CheckValidity_Range6_ReturnFibo()
+        {
+            Assert.Multiple(() =>
+            {
+                fibo.Range = 6;
+                List<int> result = new List<int> { 0, 1, 1, 2, 3, 5 };
+                Assert.That(fibo.GetFiboSeries, Does.Contain(3));
+                Assert.That(fibo.GetFiboSeries, Does.Not.Contain(4));
+                Assert.That(fibo.GetFiboSeries, Has.Count.EqualTo(6));
+                CollectionAssert.AreEqual(result, fibo.GetFiboSeries());
+            });
+        }
     }
 }
