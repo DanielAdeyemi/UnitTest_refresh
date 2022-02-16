@@ -1,12 +1,17 @@
 ﻿<Properties StartupConfiguration="{C5700363-C87E-408A-9CE7-D33EDC330E43}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sparky/Calculator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SparkyNUnitTest/GradingCalculatorNUnitTests.cs">
     <Files>
-      <File FileName="Sparky/Calculator.cs" Line="1" Column="1" />
+      <File FileName="Sparky/Calculator.cs" Line="31" Column="32" />
+      <File FileName="SparkyNUnitTest/CalculatorNUnitTests.cs" Line="40" Column="30" />
+      <File FileName="Sparky/Customer.cs" Line="22" Column="49" />
+      <File FileName="SparkyNUnitTest/CustomerNUnitTests.cs" Line="15" Column="10" />
+      <File FileName="Sparky/GradingCalculator.cs" Line="17" Column="28" />
+      <File FileName="SparkyNUnitTest/GradingCalculatorNUnitTests.cs" Line="7" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Sparky" expanded="True" selected="True">
+          <Node name="Sparky" expanded="True">
             <Node name="Sparky" expanded="True" />
             <Node name="SparkyNUnitTest" expanded="True" />
           </Node>
@@ -17,7 +22,9 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Sparky_Main" expanded="True" selected="True" />
+          <Node name="Sparky" expanded="True">
+            <Node name="SparkyNUnitTest" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -28,5 +35,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SparkyNUnitTest PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.SparkyNUnitTest PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

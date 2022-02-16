@@ -4,7 +4,7 @@ using Sparky;
 
 namespace SparkyNUnitTest
 {
-	public class GradingCalculatorNUnitTests
+    public class GradingCalculatorNUnitTests
 	{
         [TestFixture]
         public class CustomerNUnitTests
