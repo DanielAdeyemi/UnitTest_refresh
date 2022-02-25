@@ -16,7 +16,7 @@ namespace SparkyNUnitTest
 		[Test]
 		public void BankDeposit_Add100_ReturnTrue()
         {
-			var result = bankAccount.Deposit(0);
+			var result = bankAccount.Deposit(100);
 			Assert.IsTrue(result);
 			Assert.That(bankAccount.GetBalance, Is.EqualTo(100));
         }
